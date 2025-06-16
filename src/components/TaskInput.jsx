@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import useTaskStore from '../store';
 
-function TaskInput({ addTask }) {
+function TaskInput() {
   const [input, setInput] = useState('');
+  const addTask = useTaskStore((state) => state.addTask);
 
   const handleSubmit = () => {
     if (input.trim()) {

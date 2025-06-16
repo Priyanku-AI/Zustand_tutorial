@@ -1,11 +1,11 @@
 import TaskInput from './TaskInput';
 import TaskDisplay from './TaskDisplay';
 
-function TaskContainer({ tasks, addTask }) {
+function TaskContainer() {
   return (
     <div>
-      <TaskInput addTask={addTask} />
-      <TaskDisplay tasks={tasks} />
+      <TaskInput />
+      <TaskDisplay />
     </div>
   );
 }
